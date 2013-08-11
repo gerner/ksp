@@ -2,3 +2,20 @@ name: Gerner Space Program
 markdown: redcarpet
 pygments: true
 baseurl: /ksp
+
+# Owner/author information
+owner:
+  name:           Nick Gerner
+  avatar:         nick_pixelated_small.png
+  bio:            ""
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Los_Angeles
