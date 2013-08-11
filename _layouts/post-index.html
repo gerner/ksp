@@ -18,7 +18,7 @@
     <h1>{{ page.title }}</h1>
     {% if page.tagline %}<h2 class="hidden-phone">{{ page.tagline }}</h2>{% endif %}
   </div><!--/ .headline-wrap -->
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+  <img src="{{ site.baseurl }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
 </div><!-- /.image-wrap -->
 
 <div class="article-author-top">
@@ -39,7 +39,7 @@
       {% endif %}
     {% endunless %}
     <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-      <h2 itemprop="headline"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <h2 itemprop="headline"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
       <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
     </article>
   {% endfor %}
