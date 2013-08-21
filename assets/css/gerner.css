@@ -1,0 +1,6 @@
+p img + span.imgcaption {
+    color: gray;
+    font-size: smaller;
+    font-style: italic;
+    padding-left: 1em;
+}

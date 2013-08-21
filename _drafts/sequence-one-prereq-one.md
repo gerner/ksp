@@ -6,8 +6,14 @@ categories: duna-precursor
 tags: duna-sequence-one
 ---
 
-Vestri 1, the first of a pair of missions to launch AeroProbes to Minmus,
-including a return to Kerbin has launched successfully.
+Vestri 1 is the first of a pair of missions to launch AeroProbes to Minmus,
+including a return to Kerbin. These two missions will provide proof of concept
+for aero braking at Kerbin. We plan to experiment with different altitudes of
+aero braking to determine a safe range for a Duna return Kerbin aero brake
+manuver.
+
+I'm proud to report that Vestri 1 has launched successfully.
+
 
 Vestri 1 Launch Vehicle
 -----------------------
@@ -15,69 +21,74 @@ Vestri 1 Launch Vehicle
 The Vestri 1 launch vehicle consists of two stags, plus the AeroProbe payload.
 
 ![Vestri 1 on the launchpad][launchpad]
+<span class="imgcaption">Vestri 1 on the launchpad</span>
 
 ###AeroProbe Mk. 1
 
 The AeroProbe Mk. 1 is a simple, powered spacecraft meant to measure
-atmospheric parameters. It's got enough delta-v to return from Minmus. it's not
+atmospheric parameters. It's got enough delta-v to return from Minmus. It's not
 designed to get there on its own; However, it should have plenty of delta-v for
 any mid-course corrections on the way. All told, the AeroProbe Mk. 1 should
-have over 1300 m/s of delta-v. Ultimately, the aeroprobe is meant to make a
+have over 1300 m/s of delta-v. Ultimately, the AeroProbe is meant to make a
 landing on surface using a parachute.
 
-* Mk 16 Parachute
+* Mk 16 parachute
 * Probodobodyne OKTO probe core
-* Two OX-STAT Photovoltaic Panels
-* Scientific Instruments: Accelerometer, Barometer, Gravimeter, Thermometer
-* Two ROUND-8 Toroidal Fuel Tanks
+* Two OX-STAT photovoltaic panels
+* Scientific instruments: accelerometer, barometer, gravimeter, thermometer
+* Two ROUND-8 toroidal fuel tanks
 * Rocomax 48-7S rocket engine
 
 ###Stage One
 
-Stage One on Vestri 1 is the Minmus launch vehicle. It will provide the initial
+Stage one on Vestri 1 is the Minmus launch vehicle. It will provide the initial
 burn for Minmus intercept, as well as other services during the initial launch.
-Stage One should be able to provide at leat 2800/3200 m/s of delta-v (atm/vac)
+Stage One should be able to provide at least 2800/3200 m/s of delta-v (atm/vac)
 including the AeroProbe Mk. 1 payload.
 
 * RC-001S Remote Guidance Unit probe core
-* Inline Reaction Wheel
-* FL-T800 Fuel Tank
-* LV-30 Liquid Fuel Engine
+* Inline reaction wheel
+* FL-T800 fuel tank
+* LV-30 fiquid fuel engine
 
 ###Stage Two
 
-Stage Two on Vestri 1 is the primary launch stage from Kerbin surface. While
+Stage two on Vestri 1 is the primary launch stage from Kerbin surface. While
 carrying Stage One and the AeroProbe Mk. 1 payloads, it can achieve about
 2000/2200 m/s of delta-v (atm/vac). Experiments show that this is plenty to get
 into the gravity turn, well above 10km.
 
-* Two FL-T800 Fuel Tanks
-* LV-30 Liquid Fuel Engine
+* Two FL-T800 fuel tanks
+* LV-30 liquid fuel engine
 
 Launch
 ------
 
-The Launch went fine. We Turned down throttle when we were at nearly 200m/s,
+The Launch went well. We Turned down throttle when we were at nearly 200m/s,
 well above terminal velocity. We turned it down too much and ended up well
 below terminal velocity before getting it just right. Next time we'll have to
 remember to turn down throttle sooner.
 
-Stage Two, powered by a single LV-30 engine got us through most, but not all of
-our initial burn. The engineering team back at GSP had some concerns about the
-lack of gimbaling on the LV-30 for this first stage. However, the reaction-
-wheel at the top of stage two provided plenty of control.
-
 ![Stage Two launches Vestri I][launch]
+_Vestri 1 launches from KSP, powered by its second stage_
 
-Stage Two had a third of its fuelleft by the time we started our gravity turn
-around 10km. Given that our initial burn easily put Vestri 1's apoapsis at
-100km, we could have started the gravity turn sooner. One of the objectives of
-Vestri 1 is to determine changes to the Vestri 1 launch vehicle for Vestri 2,
-with a much larger payload. Between throttling down to terminal velocity at sea
-level and having plenty of fuel well into the gravity turn, it seems that the
-Vestri 1 first stage should be a fine first stage for Vestri 2.
+Stage Two, powered by a single LV-30 engine got us through most, but not all of
+our initial burn. The engineering team back at KSP had some concerns about the
+lack of gimbaling on the LV-30 for this first stage. However, the reaction-
+wheel at the top of stage two provided plenty of control. gimbal 
 
 ![Stage Two making a gravity turn][gravityturn]
+_Vestri 1 initiates its gravity turn well before decoupling stage two_
+
+Stage Two had a third of its fuel left by the time we started our gravity turn
+around 10km. This was nearly enough to complete the gravity turn. Given that
+our initial burn easily put Vestri 1's apoapsis at 100km, we could have started
+the gravity turn sooner. One of the objectives of Vestri 1 is to determine
+changes to the Vestri 1 launch vehicle for Vestri 2, with a much larger
+payload. Between throttling down to terminal velocity at sea level and having
+plenty of fuel well into the gravity turn, it seems that the
+Vestri 1 first stage should be a fine first stage for Vestri 2.
+
 
 Stage One ignited part way through the initial burn, toward the end of the
 gravity turn. More than half of its fuel was left after the first burn, leaving
