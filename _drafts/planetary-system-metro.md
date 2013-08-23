@@ -92,9 +92,23 @@ Launch
 Pitstop Relief and Munar Intercept
 ----------------------------------
 
+Jeb's excited to get home. Kellar a little worried about spending a few weeks
+
 ![Geofwin's Mission Ribbon][ribbon-kerbin-station]
 
 ![Kellar's Mission Ribbon][ribbon-kerbin-to-mun]
+
+Jeb's Return Flight Home
+------------------------
+
+in Munar orbit doing the hard work of Kethane mining.  Only need 288 m/s
+delta-v to get back to Kerbin, including a plane change (integrated with kerbin
+intercept burn).  Shoot for periapsis of about 34km to do aerobraking. Once
+we're in a stable orbit we'll aim for KSP touchdown and ultimate recovery.
+
+Goal is to refit, refuel and reuse PSM on future missions. At KSP engineers are
+already putting together designs for recovery system capable of transporting
+PSM back to KSP.
 
 [vab-psm]: {{site.baseurl}}/images/planetary-system-metro/vab-psm.png "Planetary System Metro in the VAB"
 [vab-psm-stage-1]: {{site.baseurl}}/images/planetary-system-metro/vab-psm-stage-1.png "PSM Launch Vehicle Stage 1"
