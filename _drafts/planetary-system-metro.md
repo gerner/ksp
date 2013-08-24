@@ -89,26 +89,49 @@ reaction wheels.
 Launch
 ------
 
+Standard launch.
+Issue after dropping boosters, slight attitude correction. Keller and Geofwin
+were not pleased.
+
 Pitstop Relief and Munar Intercept
 ----------------------------------
 
-Jeb's excited to get home. Kellar a little worried about spending a few weeks
+On approaching the Mun Station Kellar realizes there's no viable docking port
+available. Jeb clearly has not prepared for the transfer. A robotic docking
+tugs go into action to reconfigure the modular docking at Mun Station I. Once
+reconfigured, Kellar can move in to dock.
 
-![Geofwin's Mission Ribbon][ribbon-kerbin-station]
+After crew transfer, fuel and oxidizer are transferred for the return Jeb's
+excited to get home. Kellar a little worried about spending a few weeks doing
+the hard work of Kethane mining.
 
-![Kellar's Mission Ribbon][ribbon-kerbin-to-mun]
 
 Jeb's Return Flight Home
 ------------------------
 
-in Munar orbit doing the hard work of Kethane mining.  Only need 288 m/s
-delta-v to get back to Kerbin, including a plane change (integrated with kerbin
-intercept burn).  Shoot for periapsis of about 34km to do aerobraking. Once
-we're in a stable orbit we'll aim for KSP touchdown and ultimate recovery.
+Jeb watches Mun Station I disappear in the distance on the Lazor Cam as he
+closes in on the maneuver node. Only need 288 m/s delta-v to get back to
+Kerbin, including a plane change (integrated with kerbin intercept burn).
+Shoot for periapsis of about 34km to  do aerobraking. Once we're in a stable
+orbit we'll aim for KSP touchdown and ultimate recovery.
 
 Goal is to refit, refuel and reuse PSM on future missions. At KSP engineers are
 already putting together designs for recovery system capable of transporting
 PSM back to KSP.
+
+About 4 hour trip to Kerbin. Set alarm for about 30 minutes to periapsis.
+Should be plenty of time to prep for aerobrake maneuver. 30 minutes in plot
+maneuver node for retro-burn. Need to kill 844 m/s of orbital velocity. [KSP
+aerobrake calculations][http://alterbaron.github.io/ksp_aerocalc/] show we
+should be in fine shape with 1443 m/s orbital velocity at 2124km altitude. At
+this point, 26 minutes from periapsis.
+
+Mission Awards
+--------------
+
+![Geofwin's Mission Ribbon][ribbon-kerbin-station]
+
+![Kellar's Mission Ribbon][ribbon-kerbin-to-mun]
 
 [vab-psm]: {{site.baseurl}}/images/planetary-system-metro/vab-psm.png "Planetary System Metro in the VAB"
 [vab-psm-stage-1]: {{site.baseurl}}/images/planetary-system-metro/vab-psm-stage-1.png "PSM Launch Vehicle Stage 1"
