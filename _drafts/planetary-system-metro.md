@@ -126,6 +126,30 @@ aerobrake calculations][http://alterbaron.github.io/ksp_aerocalc/] show we
 should be in fine shape with 1443 m/s orbital velocity at 2124km altitude. At
 this point, 26 minutes from periapsis.
 
+Aerobrake was a success. Got Apoapsis from over 12,000 km to about 353 km.
+Maneuver to bring periapsis to 100km (for rendezvous with Pitstop Station).
+
+1-4T17:38
+A 12m/s prograde burn at the new apopasis brings the periapsis to about 44km
+which should put the final apoapsis right at 100km in a second aerobrake orbit.
+, in preparation for a rendezvouz with with pitstop station.
+
+1-4T18:00
+Still within atmosphere after about 3 minutes since periapsis. About half the
+orbit is now within the atmosphere. Looks like orbit with Pitstop Station is
+almost opposite. Our orbital period is almost exactly 31 minutes. Pitstop
+station is 32 minutes 44 seconds. Going to have to wait a while (perhaps nearly
+9 orbits or about 4.5 hours) to get intercept.
+
+
+1-4T18:30
+Another 28.8m/s nearly prograde burn at apoapsis to bring periapsis to 70km and
+align orbit with pitstop station. Post burn orbital period is 32:04. New
+intercept is 19 orbits out (10 hours). Fortunately orbit is now stable outside
+of atmosphere. Jeb settles in for the 10 hour wait.
+
+
+
 Mission Awards
 --------------
 
