@@ -19,3 +19,7 @@ links:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
+
+kramdown:
+    auto_ids: true
+    toc_levels: 1..2
