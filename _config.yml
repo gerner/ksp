@@ -1,5 +1,5 @@
 name: Gerner Space Program
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 baseurl: /ksp
 

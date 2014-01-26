@@ -1,6 +1,23 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/jquery.caption.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+<script>
+    $(window).load(function() {
+        $('img.caption').captionjs();
+    });
+    $(document).ready(function() {
+        $('img.caption').each( function() {
+            var $img = $(this),
+                href = $img.attr('src'), title= $img.attr('alt');
+            $img.wrap('<a href="' + href + '" class="image-link" title="' + title + '"></a>');
+        });
+    });
+    $(document).ready(function() {
+      $('.image-link').magnificPopup({type:'image'});
+    });
+</script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
