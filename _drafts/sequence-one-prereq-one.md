@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vestri 1 Launch Report"
-date:
+date: 2013-08-25
 categories: duna-precursor
 tags: duna-sequence-one
 ---
