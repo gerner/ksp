@@ -1,7 +1,8 @@
 ---
 title: scistat-resupply
 layout: post
-date: 2014-02-02
+date: 2014-02-02 21:46
+
 ---
 
 Objectives
@@ -13,8 +14,9 @@ scientific landing, it's time to send our first resupply mission.
 In this mission we send the SciStat resupply vehicle and evaluate its design
 for a Munar intercept and resupply. Key objectives include:
 
-* Launch the resupply vechicle into Munar orbit
-* Resupply SciStat with nearly a full iRockomax X200-16 fuel tank][x200-16-fuel-tank]
+* Launch the resupply vehicle into Munar orbit
+* Resupply SciStat with nearly a full [Rockomax X200-16 fuel tank][x200-16-fuel-tank]
+* Bring a new docking adapter to SciStat
 * Collect and analyze data to evaluate performance of the SciStat resupply vehicle
 
 Munar Intercept Burn
@@ -23,7 +25,7 @@ Munar Intercept Burn
 * 854m/s in initial Munar intercept burn
 * 159m/s dV left in launch stage
 * implies 695m/s up to resupply vehicle
-* Rocomax 48-7s 30 kN of thrust in resupply vehicle
+* Rockomax 48-7s 30 kN of thrust in resupply vehicle
 * at least 15405kg in resupply vehicle mass
 * implies ~2 m/s^2 acceleration
 * implies 347s burn
@@ -33,27 +35,28 @@ Munar Intercept Burn
 
 203m/s dV remaining
 
-* 14.67t
+* 14.67 tons
 * 140/171 units of fuel in drive tank, leaving resupply tank completely full
 * node +136sec
 * estimate 97sec remain in burn
 
-looks like we started the burn about 37sec late
-This could end up in disaster. I hope the smaller sized engine turns out to be
-worth it.
+It looks like we started the burn about 37sec late. This could end up in
+disaster. I hope the smaller sized engine turns out to be worth it.
 
 Complete burn, Munar Pe 48km
 
-* 13.68t, 52/64 units of fuel left in drive tank. resupply completely full.
+* 13.68 tons, 52/64 units of fuel left in drive tank. Resupply completely full.
 * &gt;80% of drive tank used for intercept, roughly 860m/s dV.
 * stable orbit around mun needs ~210m/s dV
+
+![Munar intercept and planned capture][munar-intercept]{: .caption}
 
 Remaining fuel should be enough
 Resupply tank provides buffer
 Results of this flight provide feedback for resupply vehicle design.
 
 * 52/64 units of fuel left
-* FL-T800 full mass 4.5t, dry mass 0.5t, implies 4t of fuel
+* FL-T800 full mass 4.5 tons, dry mass 0.5 tons, implies 4 tons of fuel
 * capacity 360/440 units, implies 11.1kg per unit of liquid fuel and
   corresponding oxidizer
 * implies 52/64 is 578kg
@@ -75,7 +78,7 @@ $$
 
 This will not be enough to circularize (~250m/s)
 
-For comparison, suppse we had LV909 engine (better ISP), we'd have 160m/s of dV
+For comparison, suppose we had LV909 engine (better ISP), we'd have 160m/s of dV
 left, plus any extra we had left over from the initial intercept burn.
 
 $$
@@ -115,26 +118,24 @@ extra mass vs better efficiency) between the LV909 and the 48-7s.
 
 These results suggest we should be able to get into Munar orbit with nearly a
 full supply tank. However, we still need to rendezvous with SciStat, which
-inclues an inclination change. This could be very expensive.
+includes an inclination change. This could be very expensive.
 
 Munar Transfer
 --------------
 
 With the initial burn complete, it only remains to wait for Munar intercept.
-The unmanned resupply vehicle is dependent on [remote tech][remote-tech]
-antennae to stay in touch with KSP.
+The unmanned resupply vehicle is dependent on RemoteTech
+antennae to stay in touch with KSC.
 
-![Remote Tech communication path][remote-tech-comm-path]
+![Remote Tech communication path][remotetech-comm-path]{: .caption}
 
 It's worth a check at this point that we've got all the settings correct before
 we get too far away to fix any issues.
 
-![Resupply vehicle talking to KerbComm B and D][resupply-to-kerbcomm-b-d]
+![Resupply vehicle talking to KerbComm B and D][resupply-to-kerbcomm-b-d]{: .caption}
 
 The resupply vehicle is configured to talk to KerbComm B and D, and both
-anntenae are operational. Let's make sure B and D are configured to talk back.
-
-Indeed, both are.
+antennae are operational. And both B and D are configured to talk back.
 
 Munar Capture
 -------------
@@ -143,21 +144,22 @@ Once we're close enough to start planning for capture, it's clear we're 26.6
 degrees inclined from SciStat. In our initial capture burn, we'll try and pull
 in both our Ap and Pe in prep for a second inclination change.
 
-![Munar capture and rendezvous][capture-and-rendezvous-plan]
+![Munar capture requiring multiple 250m/s burns][munar-capture-planned-burns]{: .caption}
 
 Unfortunately, as I thought earlier, we'll need about 250m/s of dV for the
 plane change, after the initial capture burn of 250m/s. We'll probably end up
 with about 90% of the resupply tank left after rendezvous.
 
-* 250m/s
+* 250m/s dV
 * 13680kg
 * 30kN of thrust
 * implies just over 2m/s^2 of acceleration
 * implies 114s burn
 
+
 We'll need to start our burn almost a minute ahead of each planned maneuver.
 
-One issue with this plan is that my second maneuver node is on the darkside of
+One issue with this plan is that my second maneuver node is on the dark side of
 the moon. This means I'll have no line of site to Kerbin. For this second
 maneuver I'll have to rely on the flight computer. I hope the two minute burn
 doesn't end up being too complex a maneuver.
@@ -170,12 +172,14 @@ Rendezvous
 ----------
 
 Unfortunately, the new rendezvous point puts us on the dark side of the Mun
-again. To avoid any issues with the rendezvous and docking, I retarget one of
-my antennae at MunComm Observer, a communications relay sattelite, co-orbiting
+again. To avoid any issues with the rendezvous and docking, I re-target one of
+my antennae at MunComm Observer, a communications relay satellite, co-orbiting
 with the Mun, just outside its sphere of influence. Think of this as a
-sattelite at the Mun's L4 point. Of course, KSP doesn't model [Lagrange
+satellite at the Mun's L4 point. Of course, KSP doesn't model [Lagrange
 points][lagrange-points], but this co-orbit provides a similar purpose for this
-communication sattelite.
+communication satellite.
+
+![Reconfiguring the resupply vehicle to talk to MunComm Observer][reconfigure-muncomm-observer]{: .caption}
 
 It looks like the Rendezvous burn will take another 60m/s of dV. Quite likely
 we'll be down to &lt;80% of the resupply tank left.
@@ -183,11 +187,16 @@ we'll be down to &lt;80% of the resupply tank left.
 * 580/709 units of fuel left
 * 80% of supply tank remains
 
-First docked Lander to resupply vehicle multi-port docking adapapter in an
+![Docking the lander in an imbalanced position][imbalanced-lander-docking]{: .caption}
+
+First docked Lander to resupply vehicle multi-port docking adapter in an
 imbalanced configuration. Ultimate goal is to dock resupply vehicle and leave
 adapter behind.
 
-Finally docked resupply vehicle with lander to 
+Finally I docked the resupply vehicle with lander to SciStat to complete the
+rendezvous and docking maneuvers.
+
+![Resupply vehicle docked to SciStat with the lander in final configuration][final-docking]{: .caption}
 
 Takeaways
 ---------
@@ -205,8 +214,15 @@ Takeaways
 
 [x200-16-fuel-tank]: http://wiki.kerbalspaceprogram.com/wiki/Rockomax_X200-16_Fuel_Tank
 [cheat-sheet]: http://wiki.kerbalspaceprogram.com/wiki/Cheat_Sheet
-[remote-tech-comm-path]: images/scistat-resupply/remote-tech-comm-path.png
-[resupply-to-kerbcomm-b-d]: images/scistat-resupply/resupply-to-kerbcomm-b-d.png
 [lagrange-points]: https://en.wikipedia.org/wiki/Lagrange_points
-[kramdown]: foo
-[mathjax]: bar
+[kramdown]: http://kramdown.gettalong.org/
+[mathjax]: http://www.mathjax.org/
+
+[munar-intercept]: {{site.baseurl}}/images/scistat-resupply/munar-intercept.png
+[remotetech-comm-path]: {{site.baseurl}}/images/scistat-resupply/remotetech-comm-path.png
+[resupply-to-kerbcomm-b-d]: {{site.baseurl}}/images/scistat-resupply/resupply-to-kerbcomm-b-d.png
+[munar-capture-planned-burns]: {{site.baseurl}}/images/scistat-resupply/munar-capture-planned-burns.png
+[reconfigure-muncomm-observer]: {{site.baseurl}}/images/scistat-resupply/reconfigure-muncomm-observer.png
+[imbalanced-lander-docking]: {{site.baseurl}}/images/scistat-resupply/imbalanced-lander-docking.png
+[final-docking]: {{site.baseurl}}/images/scistat-resupply/final-docking.png
+
