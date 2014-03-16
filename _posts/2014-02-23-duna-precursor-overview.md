@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Duna Precursor Program Overview"
-date:   2013-08-10 08:02:19
+date: 2014-02-23 11:23
+
 categories: duna-precursor
 ---
 
@@ -35,7 +36,7 @@ Program Objectives
 * Determine and gain experience with various topographical parameters including
   altitude distribution
 * Explore resource locations
-* Identify and explore anomolies
+* Identify and explore anomalies
 * Scout possible locations for long-term base installations
 
 ###Deliver Necessary Equipment
@@ -62,10 +63,18 @@ milestones which must be hit on deadline:
    launch window
 2. A second sequence of unmanned missions leaving Kerbin at the second Duna
    launch window, before any of the first set of missions can return to Kerbin.
-   This second sequence will have a more abitious set of goals than first.
+   This second sequence will have a more ambitious set of goals than first,
+   paving the way for the final sequence of missions.
 3. A final sequence of one or more manned missions, and possibly several
-   unmanned missiones to Duna leaving Kerbin during the third Duna launch
+   unmanned missions to Duna leaving Kerbin during the third Duna launch
    window, after some of the first unmanned missions return from Duna, but
    before any from the second return.
 
+In addition, thanks to [Alex Moon's launch window
+planner][launch-window-planner] we know we get a launch window at about day 57
+with a period of 213 days. So we can structure our planning around these
+repeating launch windows.
+
 We will detail these three sequences in following posts.
+
+[launch-window-planner]: http://alexmoon.github.io/ksp/
