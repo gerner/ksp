@@ -1,34 +1,41 @@
-//first get the thrust for the current stage
+
+//----------- get craft parameters
 
 set max_thrust to ship:maxthrust.
 set lf0 to ship:liquidfuel.
-
 set g TO ship:body:mu / ship:body:radius^2 * -1 * ship:up:vector.
-//set g to ship:sensors:grav.
 
 set wait_time to 0.001.
 
-//----------- initialize PID model -----
+//------------- set up targets ------
 
-//lock desired_landing_speed to -5.0 - alt:radar^2/200.
 lock desired_landing_speed to -0.5 * sqrt(25 + 2* (max_thrust / ship:mass - g:mag) * alt:radar).
 
 set initial_descent_height to 1000.
-until alt:radar < initial_descent_height {
+set initial_descent_time to 20.
+until (((status = "FLYING" or status = "SUB_ORBITAL") and alt:radar < initial_descent_height) or ((status = "ORBITING") and eta:periapsis < initial_descent_time)) {
     clearscreen.
-    print "initial descent agl: "+initial_descent_height.
+    print "initial descent agl:  "+initial_descent_height.
+    print "initial descent time: "+initial_descent_height.
     print "agl:                 "+alt:radar.
+    print "eta to periapsis:    "+eta:periapsis.
+    print "status:              "+status.
     print "desired vspeed: "+desired_landing_speed.
     print "current vspeed: "+ship:verticalspeed.
     print "current hspeed: "+ship:surfacespeed.
 }
 
+print "beginning landing".
+
 //100 is plenty for a small craft
 //500 might be too little for a very large craft
-set final_descent_height to 100.
+set final_descent_height to 500.
 when alt:radar < final_descent_height then {
+    print "beginning final descent".
     lock desired_landing_speed to -5 + -1 * (alt:radar/(final_descent_height/10))^2.
 }
+
+//----------- initialize PID model -----
 
 lock actual to ship:velocity:surface.
 
@@ -42,9 +49,9 @@ set D to V(0,0,0).
 
 lock modeled_error to Kp * P + Ki * I + Kd * D.
 set required_thrust to 0.0.
-lock in_deadband to required_thrust < g:mag/2.
+lock in_deadband to required_thrust < 4.5.
 
-//------------ VECDRAW ---------------
+//------------ visualize some vectors ---------------
 set P_arrow to vecdraw().
 set P_arrow:show to true.
 set P_arrow:color to blue.
@@ -70,16 +77,17 @@ set thrott to 0.0.
 lock steering to steer.
 lock throttle to thrott.
 
-//---------- landing loop
-set t0 to TIME:SECONDS.
+//---------- some logging data
 lock P_vertical to (P-vxcl(ship:up:vector,P)).
 lock I_vertical to (I-vxcl(ship:up:vector,I)).
 lock D_vertical to (D-vxcl(ship:up:vector,D)).
 lock logline to ((TIME:SECONDS - t0) + ","+(P_vertical:mag)+","+(I_vertical:mag)+","+(D_vertical:mag)).
 
+//---------- landing loop
+set t0 to TIME:SECONDS.
 set last_P to V(0,0,0).
 set last_t to TIME:SECONDS.
-until NOT (status = "FLYING") {
+until NOT (status = "FLYING" or status = "ORBITING" or status = "SUB_ORBITAL") {
 
     set target_vec to ship:up:vector * desired_landing_speed.
     set error_term to (target_vec - actual).
@@ -144,7 +152,8 @@ until NOT (status = "FLYING") {
     wait wait_time.
 }
 
-//copy "pid.log" to 0.
+print "complete".
+print status.
 
 lock throttle to 0.
 lock steering to ship:up.
